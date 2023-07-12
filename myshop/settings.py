@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'shop.apps.ShopConfig',
+    'cart.apps.CartConfig',
 ]
 
 MIDDLEWARE = [
@@ -130,3 +131,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # configurando o servidor de desenvolvimento para trabalhar com imagens
 MEDIA_URL = '/media/'
 MEIDA_ROOT = os.path.join(BASE_DIR, 'media/')
+
+
+# chave para armazenar o carrinho de compras
+CART_SESSION_ID = 'cart'
