@@ -137,3 +137,13 @@ MEIDA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # chave para armazenar o carrinho de compras
 CART_SESSION_ID = 'cart'
+
+
+# configurando Django para que ele escreva os emails no console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Enviando emails com o Django
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = os.environ.get('GMAIL_ACCOUNT','')
+#EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASSWORD','')
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
