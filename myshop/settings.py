@@ -141,13 +141,13 @@ CART_SESSION_ID = 'cart'
 
 
 # configurando Django para que ele escreva os emails no console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Enviando emails com o Django
-#EMAIL_HOST = 'smtp.gmail.com'
-#EMAIL_HOST_USER = os.environ.get('GMAIL_ACCOUNT','')
-#EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASSWORD','')
-#EMAIL_PORT = 587
-#EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = os.environ.get('GMAIL_ACCOUNT','')
+EMAIL_HOST_PASSWORD = os.environ.get('GMAIL_PASSWORD','')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 
 # configurações para o braintree
@@ -163,3 +163,6 @@ BRAINTREE_CONF = braintree.Configuration(
     BRAINTREE_PUBLIC_KEY,
     BRAINTREE_PRIVATE_KEY
 )
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')

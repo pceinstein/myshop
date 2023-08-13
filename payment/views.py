@@ -1,10 +1,11 @@
 from django.shortcuts import render
-
-# Create your views here.
 import braintree
 from django.shortcuts import render, redirect, get_object_or_404
 from django.conf import settings
 from orders.models import Order
+from .tasks import payment_completed
+
+# Create your views here.
 
 # instancia o gateway de pagamento Braintree
 gateway = braintree.BraintreeGateway(settings.BRAINTREE_CONF)
@@ -33,6 +34,8 @@ def payment_process(request):
             # armazena o id de transação único
             order.braintree_id = result.transaction.id
             order.save()
+            # dispara uma tarefa assíncrona (envia emaii)
+            payment_completed.delay(order.id)
             return redirect('payment:done')
         else:
             return redirect('payment:canceled')
