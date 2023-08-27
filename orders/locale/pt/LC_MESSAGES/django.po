@@ -8,15 +8,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 17:49-0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2023-08-27 17:31-0300\n"
+"PO-Revision-Date: 2023-08-27 20:41+0000\n"
+"Last-Translator:   <admin@example.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
 
 #: orders/models.py:11
 msgid "first name"
@@ -75,6 +76,7 @@ msgstr ""
 "                    "
 
 #: orders/templates/orders/order/create.html:30
+#: orders/templates/orders/order/pdf.html:58
 msgid "Total"
 msgstr "Total"
 
@@ -91,11 +93,49 @@ msgstr "Obrigado"
 #, python-format
 msgid ""
 "\n"
-"        <p>Your order has been successfully completed. Your order number is "
-"<strong>%(order_id)s.</strong></p>\n"
+"        <p>Your order has been successfully completed. Your order number is <strong>%(order_id)s.</strong></p>\n"
 "    "
 msgstr ""
 "\n"
-"        <p>Seu pedido foi concluído com sucesso. O número do seu pedido é "
-"<strong>%(order_id)s.</strong></p>\n"
+"        <p>Seu pedido foi concluído com sucesso. O número do seu pedido é <strong>%(order_id)s.</strong></p>\n"
 "    "
+
+#: orders/templates/orders/order/pdf.html:6
+msgid "Document"
+msgstr "Documento"
+
+#: orders/templates/orders/order/pdf.html:17
+msgid "Bill to"
+msgstr "Faturar a"
+
+#: orders/templates/orders/order/pdf.html:25
+msgid "Items bought"
+msgstr "Produtos comprados"
+
+#: orders/templates/orders/order/pdf.html:29
+msgid "Product"
+msgstr "Produto"
+
+#: orders/templates/orders/order/pdf.html:30
+msgid "Price"
+msgstr "Preço"
+
+#: orders/templates/orders/order/pdf.html:31
+msgid "Quantity"
+msgstr "Quantidade"
+
+#: orders/templates/orders/order/pdf.html:32
+msgid "Cost"
+msgstr "Valor"
+
+#: orders/templates/orders/order/pdf.html:65
+msgid "Paid"
+msgstr "Pago"
+
+#: orders/templates/orders/order/pdf.html:65
+msgid "Pending payment"
+msgstr "Pagamento pendente"
+
+#: orders/urls.py:8
+msgid "create/"
+msgstr "criado/"

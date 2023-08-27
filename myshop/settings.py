@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
     'coupons.apps.CouponsConfig',
+    'rosetta',
+    'parler',
 ]
 
 MIDDLEWARE = [
@@ -125,8 +127,20 @@ USE_TZ = True
 LANGUAGES = (
     ('en', _('English')),
     ('es', _('Spanish')),
-    ('pt-br', _('Portuguese')),
+    ('pt', _('Portuguese')),
 )
+
+PARLER_LANGUAGES = {
+    None: (
+        {'code': 'en'},
+        {'code': 'es'},
+        {'code': 'pt'},
+    ),
+    'default': {
+        'fallback': 'en',
+        'hide_untranslated': False,
+    }
+}
 
 LOCALE_PATHS = (
     os.path.join(BASE_DIR, 'locale/'),
