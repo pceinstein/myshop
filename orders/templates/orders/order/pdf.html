@@ -1,3 +1,5 @@
+{% load i18n %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +8,9 @@
     <title>{% translate 'Document' %}</title>
 </head>
 <body>
-    <h1>My Shop</h1>
+    <h1>{% translate 'My Shop' %}</h1>
     <p>
-        Invoice no. {{order.id}}<br>
+        {% translate 'Invoice no.' %} {{order.id}}<br>
         <span class="secondary">
             {{order.created|date:"M d, Y"}}
         </span>

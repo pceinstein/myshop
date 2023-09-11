@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-27 17:31-0300\n"
+"POT-Creation-Date: 2023-09-11 17:36-0300\n"
 "PO-Revision-Date: 2023-08-27 20:41+0000\n"
 "Last-Translator:   <admin@example.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgstr ""
 "                    "
 
 #: orders/templates/orders/order/create.html:30
-#: orders/templates/orders/order/pdf.html:58
+#: orders/templates/orders/order/pdf.html:60
 msgid "Total"
 msgstr "Total"
 
@@ -93,46 +93,56 @@ msgstr "Obrigado"
 #, python-format
 msgid ""
 "\n"
-"        <p>Your order has been successfully completed. Your order number is <strong>%(order_id)s.</strong></p>\n"
+"        <p>Your order has been successfully completed. Your order number is "
+"<strong>%(order_id)s.</strong></p>\n"
 "    "
 msgstr ""
 "\n"
-"        <p>Seu pedido foi concluído com sucesso. O número do seu pedido é <strong>%(order_id)s.</strong></p>\n"
+"        <p>Seu pedido foi concluído com sucesso. O número do seu pedido é "
+"<strong>%(order_id)s.</strong></p>\n"
 "    "
 
-#: orders/templates/orders/order/pdf.html:6
+#: orders/templates/orders/order/pdf.html:8
 msgid "Document"
 msgstr "Documento"
 
-#: orders/templates/orders/order/pdf.html:17
+#: orders/templates/orders/order/pdf.html:11
+msgid "My Shop"
+msgstr "Minha Loja"
+
+#: orders/templates/orders/order/pdf.html:13
+msgid "Invoice no."
+msgstr "Fatura no."
+
+#: orders/templates/orders/order/pdf.html:19
 msgid "Bill to"
 msgstr "Faturar a"
 
-#: orders/templates/orders/order/pdf.html:25
+#: orders/templates/orders/order/pdf.html:27
 msgid "Items bought"
 msgstr "Produtos comprados"
 
-#: orders/templates/orders/order/pdf.html:29
+#: orders/templates/orders/order/pdf.html:31
 msgid "Product"
 msgstr "Produto"
 
-#: orders/templates/orders/order/pdf.html:30
+#: orders/templates/orders/order/pdf.html:32
 msgid "Price"
 msgstr "Preço"
 
-#: orders/templates/orders/order/pdf.html:31
+#: orders/templates/orders/order/pdf.html:33
 msgid "Quantity"
 msgstr "Quantidade"
 
-#: orders/templates/orders/order/pdf.html:32
+#: orders/templates/orders/order/pdf.html:34
 msgid "Cost"
 msgstr "Valor"
 
-#: orders/templates/orders/order/pdf.html:65
+#: orders/templates/orders/order/pdf.html:67
 msgid "Paid"
 msgstr "Pago"
 
-#: orders/templates/orders/order/pdf.html:65
+#: orders/templates/orders/order/pdf.html:67
 msgid "Pending payment"
 msgstr "Pagamento pendente"
 

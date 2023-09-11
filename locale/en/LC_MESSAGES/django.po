@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-27 17:31-0300\n"
+"POT-Creation-Date: 2023-09-11 17:36-0300\n"
 "PO-Revision-Date: 2023-08-27 19:11+0000\n"
 "Last-Translator:   <admin@example.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,15 +89,15 @@ msgstr ""
 msgid "Coupon"
 msgstr ""
 
-#: myshop/settings.py:128
+#: myshop/settings.py:129
 msgid "English"
 msgstr ""
 
-#: myshop/settings.py:129
+#: myshop/settings.py:130
 msgid "Spanish"
 msgstr ""
 
-#: myshop/settings.py:130
+#: myshop/settings.py:131
 msgid "Portuguese"
 msgstr ""
 
