@@ -193,3 +193,9 @@ BRAINTREE_CONF = braintree.Configuration(
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
+
+# configurações do redis
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1

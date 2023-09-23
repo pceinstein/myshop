@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-11 17:36-0300\n"
-"PO-Revision-Date: 2023-08-27 19:25+0000\n"
+"POT-Creation-Date: 2023-09-23 16:49-0300\n"
+"PO-Revision-Date: 2023-09-23 19:51+0000\n"
 "Last-Translator:   <admin@example.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -74,19 +74,24 @@ msgstr ""
 msgid "Total"
 msgstr "Total"
 
-#: cart/templates/cart/detail.html:81
+#: cart/templates/cart/detail.html:83
+#: shop/templates/shop/product/detail.html:28
+msgid "People who bought this also bought"
+msgstr "Pessoas que compraram isto também compraram"
+
+#: cart/templates/cart/detail.html:96
 msgid "Apply a coupon"
 msgstr "Aplicar cupom"
 
-#: cart/templates/cart/detail.html:84
+#: cart/templates/cart/detail.html:99
 msgid "Apply"
 msgstr "Aplicar"
 
-#: cart/templates/cart/detail.html:90
+#: cart/templates/cart/detail.html:105
 msgid "Continue shopping"
 msgstr "Continuar comprando"
 
-#: cart/templates/cart/detail.html:92
+#: cart/templates/cart/detail.html:107
 msgid "Checkout"
 msgstr "Comprar"
 
